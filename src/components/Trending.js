@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useSelector } from 'react-redux'
-const Recommends = (props) => {
-  const recommends = useSelector((state) => state.movie.recommend)
+import { useSelector } from "react-redux";
+const Trending = (props) => {
+  const trending = useSelector((state) => state.movie.trending)
+  console.log(trending)
   return (
     <Container>
-      <h4> Recommends For You</h4>
+      <h4> Trending For You</h4>
       <Content>
         {
-          recommends && recommends.map((item, key) => <Wrap key={key}>
+          trending && trending.map((item, key) => <Wrap key={key}>
 
             <Link to={`/detail/${item.id}`}>
               <img src={item.cardImg}
@@ -62,4 +63,4 @@ img{
   border-color: rgba(249,249,249, 0.8);
 }
 `
-export default Recommends
+export default Trending

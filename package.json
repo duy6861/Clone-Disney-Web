@@ -14,10 +14,12 @@
     "firebase-tools": "^14.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-modal": "^3.16.3",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.4.1",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.3",
+    "react-youtube": "^10.1.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.16",
     "web-vitals": "^2.1.4"
